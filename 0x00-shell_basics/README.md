@@ -10,3 +10,4 @@ Eighth script deletes 'betty'
 Ninth script deletes my_first_directory
 Tenth script changes working directory to the previous one
 Eleventh script lists content of cwd, contents of parent directory, and contents of /boot
+Twelfth script prints file type
