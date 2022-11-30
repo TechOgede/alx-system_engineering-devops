@@ -8,3 +8,4 @@ Sixth script creates a directory in /tmp directory
 Seventh script moves 'betty' file from  /tmp to my_first_directory
 Eighth script deletes 'betty'
 Ninth script deletes my_first_directory
+Tenth script changes working directory to the previous one
