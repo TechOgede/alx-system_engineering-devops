@@ -7,3 +7,4 @@ Fifth script lists all contents as well as user and group ID
 Sixth script creates a directory in /tmp directory
 Seventh script moves 'betty' file from  /tmp to my_first_directory
 Eighth script deletes 'betty'
+Ninth script deletes my_first_directory
