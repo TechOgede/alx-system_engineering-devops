@@ -9,3 +9,4 @@ Script 7 adds execute permission to owner, group owner and others
 Script 8 removes owner and group owner permissions and gives others all the permissions
 Script 9 sets hello permissions to -rwxr-x-wx
 Script 10 sets hello permissions using a reference
+Script 11 sets permissions for files and directories recursively
