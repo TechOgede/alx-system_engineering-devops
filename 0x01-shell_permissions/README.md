@@ -6,3 +6,4 @@ Script 4 creates an empty file 'hello'
 Script 5 adds execute permission to owner
 Script 6 adds execute permission to owner and group owner and read permission to others
 Script 7 adds execute permission to owner, group owner and others
+Script 8 removes owner and group owner permissions and gives others all the permissions
