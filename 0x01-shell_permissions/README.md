@@ -12,4 +12,5 @@ Script 10 sets hello permissions using a reference
 Script 11 sets permissions for files and directories recursively
 Script 12 creates a directory with permissions specified
 Script 13 changes group of hello file to school
-Script 14 changes the owner and group owner of a file at the same time 
+Script 14 changes the owner and group owner of a file at the same time
+Script 15 changes the owner and group of a symbolic link 
