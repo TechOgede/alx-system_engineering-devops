@@ -15,3 +15,4 @@ Thirteenth script creates a symbolic link
 Fourteenth script uses a wildcard to copy html files
 Fifteenth script moves files with capitalized names
 Sixteenth script deletes files whose name end in ~
+Seventeenth script creates three directories in cwd
