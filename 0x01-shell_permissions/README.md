@@ -11,3 +11,4 @@ Script 9 sets hello permissions to -rwxr-x-wx
 Script 10 sets hello permissions using a reference
 Script 11 sets permissions for files and directories recursively
 Script 12 creates a directory with permissions specified
+Script 13 changes group of hello file to school
