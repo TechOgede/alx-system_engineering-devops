@@ -14,4 +14,5 @@ Script 12 creates a directory with permissions specified
 Script 13 changes group of hello file to school
 Script 14 changes the owner and group owner of a file at the same time
 Script 15 changes the owner and group of a symbolic link
-Script 16 changes owner of a file based on its previous owner 
+Script 16 changes owner of a file based on its previous owner
+Script 17 plays Star Wars IV in the terminal 
