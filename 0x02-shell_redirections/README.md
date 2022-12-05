@@ -17,3 +17,4 @@ Script 15-countthatword counts the occurence of 'bin' in /etc/passwd
 Script 16-whatsnext displays 3 lines after the line in which 'root' occurs
 Script 17-hidethisword displays lines that do not contain 'bin'
 Script 18-letteronly displays all lines starting with a letter
+Script 19-AZ replaces 'A' and 'c' with 'Z' and 'e' respectively
