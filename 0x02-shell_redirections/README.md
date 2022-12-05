@@ -10,3 +10,4 @@ Script 8-cwd_state saves current state of directory
 Script 9-duplicate_last_line duplicates the last line of the iacta file
 Script 10-no_more_js deletes .js fils in working dir and all its subdir
 Script 11-directories counts the number of dirs and subdirs in the cwd
+Script 12-newest_files displays the 10 newest files
