@@ -12,4 +12,6 @@ Script 10-no_more_js deletes .js fils in working dir and all its subdir
 Script 11-directories counts the number of dirs and subdirs in the cwd
 Script 12-newest_files displays the 10 newest files
 Script 13-unique takes a list of words and prints out only the unique words
-Script 14-countthatword counts the occurence of 'bin' in /etc/passwd
+Script 14-findthatword displays lines containing the word 'root' in /etc/passwd
+Script 15-countthatword counts the occurence of 'bin' in /etc/passwd
+Script 15
