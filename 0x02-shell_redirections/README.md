@@ -15,3 +15,4 @@ Script 13-unique takes a list of words and prints out only the unique words
 Script 14-findthatword displays lines containing the word 'root' in /etc/passwd
 Script 15-countthatword counts the occurence of 'bin' in /etc/passwd
 Script 16-whatsnext displays 3 lines after the line in which 'root' occurs
+Script 17-hidethisword displays lines that do not contain 'bin'
