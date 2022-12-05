@@ -7,3 +7,4 @@ Script 5-firstlines displays the first 10 lines of /etc/passwd
 Script 6-third_line displays the third line of /etc/passwd
 Script 7-file creates a new file containing some text
 Script 8-cwd_state saves current state of directory
+Script 9-duplicate_last_line duplicates the last line of the iacta file
