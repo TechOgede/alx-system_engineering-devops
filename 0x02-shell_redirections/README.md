@@ -19,3 +19,5 @@ Script 17-hidethisword displays lines that do not contain 'bin'
 Script 18-letteronly displays all lines starting with a letter
 Script 19-AZ replaces 'A' and 'c' with 'Z' and 'e' respectively
 Script 20-hiago deletes characters C and c
+Script 21-reverse reverses its input
+Script 22-users_and_homes displays a sorted list of users and their home directories
