@@ -22,4 +22,5 @@ Script 20-hiago deletes characters C and c
 Script 21-reverse reverses its input
 Script 22-users_and_homes displays a sorted list of users and their home directories
 Script 100-empty_casks finds all empty files in the cwd and its sub dirs
-Scripts 101-gifs lists all the .gif files in the cwd
+Script 101-gifs lists all the .gif files in the cwd
+Script 102-acrostic prints out first letter of each line
