@@ -7,4 +7,5 @@
 6-create_local_variable creates a local variable, BEST
 7-create_global_variable creates a global variable, BEST
 8-true_knowledge prints the result of the sum of 128 and the value in $TRUEKNOWLEDGE
+9-divide_and_rule prints the result of POWER divided by DIVIDE
 
