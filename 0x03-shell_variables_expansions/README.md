@@ -3,3 +3,5 @@
 2-path adds /action to PATH
 3-paths counts the number of dirs in PATH
 4-global_variables lists environment variables
+5-local_variables lists all variables and functions
+
