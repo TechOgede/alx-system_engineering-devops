@@ -9,4 +9,6 @@
 8-true_knowledge prints the result of the sum of 128 and the value in $TRUEKNOWLEDGE
 9-divide_and_rule prints the result of POWER divided by DIVIDE
 10-love_exponent_breath displays the result of BREATH to the power of LOVE	
-
+11-binary_to_decimal converts a number from base2 to base10
+12-combinations prints all the possible combinations of two letters except oo
+13-print_floats prints a  number with two decimal places
