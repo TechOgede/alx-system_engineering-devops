@@ -8,4 +8,5 @@
 7-create_global_variable creates a global variable, BEST
 8-true_knowledge prints the result of the sum of 128 and the value in $TRUEKNOWLEDGE
 9-divide_and_rule prints the result of POWER divided by DIVIDE
+10-love_exponent_breath displays the result of BREATH to the power of LOVE	
 
