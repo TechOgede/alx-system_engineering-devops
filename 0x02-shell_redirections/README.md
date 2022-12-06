@@ -24,3 +24,4 @@ Script 22-users_and_homes displays a sorted list of users and their home directo
 Script 100-empty_casks finds all empty files in the cwd and its sub dirs
 Script 101-gifs lists all the .gif files in the cwd
 Script 102-acrostic prints out first letter of each line
+Script 103-the_biggest_fan parses web server logs and displays the 11 hosts which did the most requests
