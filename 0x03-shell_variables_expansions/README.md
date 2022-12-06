@@ -6,4 +6,5 @@
 5-local_variables lists global, local variables and functions
 6-create_local_variable creates a local variable, BEST
 7-create_global_variable creates a global variable, BEST
+8-true_knowledge prints the result of the sum of 128 and the value in $TRUEKNOWLEDGE
 
