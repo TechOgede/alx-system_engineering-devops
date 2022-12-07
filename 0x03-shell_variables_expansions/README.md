@@ -14,5 +14,5 @@
 13-print_floats prints a  number with two decimal places
 100-decimal_to_hexadecimal converts a number from base 10 to base 16
 101-rot13 encodes and decodes text using rot13
-
+102-odd prints alternate lines of a text
 103-water_and_stir adds two numbers stored in variables and changes the numeric base
