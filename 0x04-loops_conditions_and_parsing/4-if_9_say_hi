@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#Displays 'Hi' after the 9th iteration
+
+i=0
+
+string="Best School"
+string2="Hi"
+
+while [ $i -lt 10 ]; do
+if [ $i -eq 8 ]
+then
+	echo "$string"
+	echo "$string2"
+else
+	echo "$string"
+fi
+(( i++ ))
+done
