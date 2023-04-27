@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#Prints a string multiple times using an until loop
+
+i="0"
+string="Best School"
+
+until [ $i -eq 9 ]; do
+echo "$string"
+(( i++ ))
+done
