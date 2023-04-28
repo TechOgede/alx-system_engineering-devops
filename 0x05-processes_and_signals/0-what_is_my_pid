@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# Prints its own PID
-
-pgrep -f ./0-what_is_my_pid
