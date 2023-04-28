@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Kill dash 9
+
+pkill -9 -f ./7-highlander
