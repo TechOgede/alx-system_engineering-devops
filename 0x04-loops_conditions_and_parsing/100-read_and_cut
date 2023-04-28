@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Read selected field from the /etc/passwd file
+
+file="/etc/passwd"
+
+while IFS=: read -r f1 _ f3 _ _ f6 _; do
+	printf '%s:%s:%s\n' "$f1" "$f3" "$f6"
+done <"$file"
