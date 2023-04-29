@@ -6,7 +6,7 @@
 function handler()
 {
 	rm /var/run/myscript.pid
-	pkill -9 -f ./100-process_and_pid_file
+	exit
 }
 
 pgrep -f ./100-process_and_pid_file > /var/run/myscript.pid
