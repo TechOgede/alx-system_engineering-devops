@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# writes a string to a file indefinitely
+
+str="I am alive!"
+path="/tmp/my_process"
+
+while true; do
+	echo "$str" >> "$path"
+	sleep 2
+done
