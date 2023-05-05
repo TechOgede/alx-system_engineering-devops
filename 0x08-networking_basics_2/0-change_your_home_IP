@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#Configures a server. Changes the IP address of localhost and facebook.com
+
+hosts="/etc/hosts"
+old_localhost="127.0.0.1"
+new_localhost="127.0.0.2"
+
+cp "$hosts" /hosts.new
+sed -i "s/$old_localhost/$new_localhost/" /hosts.new
+printf "8.8.8.8\tfacebook.com\n" >> /hosts.new
+cp -f /hosts.new "$hosts"
