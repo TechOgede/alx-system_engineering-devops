@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # Connects to 54.175.165.214 with the user 'ubuntu' using the private key '~/.ssh/school'
 
-ssh-add ~/.ssh/school
-ssh ubuntu@54.175.165.214
+ssh -i ~/.ssh/school ubuntu@54.175.165.214
