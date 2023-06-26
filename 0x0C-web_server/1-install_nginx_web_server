@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 # Installs Nginx and modifies the nginx config file
-sudo apt-get update; sudo apt-get upgrade
-sudo apt-get -y install nginx
-echo 'Hello World!' > /hello_world
-sed -i 's|root .*|root /;|' /etc/nginx/sites-available/default
-sed -i 's|index .*|index  hello_world;|' /etc/nginx/sites-available/default
-sudo service nginx restart
+apt-get -y  update; apt-get -y upgrade
+apt-get -y install nginx
+echo 'Hello World!' > /var/www/html/index.nginx-debian.html
+service nginx restart
