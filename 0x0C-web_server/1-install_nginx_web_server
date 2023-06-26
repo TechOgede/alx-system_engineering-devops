@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Installs Nginx and sets it to listen on port 80 and to return a page with "Hello World"
+# as content in response to a GET request
+
+#sudo apt-get update; sudo apt-get upgrade
+#sudo apt-get -y install nginx
+echo 'Hello World!' > /hello_world
+sed -i 's|root .*|root /;|' /etc/nginx/sites-available/default
+sed -i 's|index .*|index  hello_world;|' /etc/nginx/sites-available/default
+sudo service nginx restart
