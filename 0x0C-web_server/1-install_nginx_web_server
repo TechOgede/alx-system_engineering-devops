@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-
-# Installs Nginx and sets it to listen on port 80 and to return a page with "Hello World"
-# as content in response to a GET request
-
+# Installs Nginx and modifies the nginx config file
 sudo apt-get update; sudo apt-get upgrade
 sudo apt-get -y install nginx
 echo 'Hello World!' > /hello_world
