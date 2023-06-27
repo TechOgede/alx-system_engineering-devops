@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Displays custom message for 404 error
+
+#apt-get -y  update
+#apt-get -y install nginx
+echo "Ceci n'est pas une page" > /var/www/html/error_404.txt
+sed -i "s|^[^#].*server_name.*|\tserver_name _;\n\terror_page 404 /var/www/html/error_404.txt;|" /etc/nginx/sites-available/default
+service nginx restart
