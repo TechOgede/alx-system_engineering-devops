@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #Permanently redirects the page at /redirect_me to another page
 
-mkdir /redirect_me
+mkdir /var/www/html/redirect_me
 sed -i -e '/server_name.*/c\' -e 'server_name _;\' -e 'rewrite ^/redirect_me$ / permanent;\' /etc/nginx/sites-available/default
 service nginx restart
