@@ -2,6 +2,5 @@
 # Installs Nginx and modifies the nginx config file
 apt-get -y  update
 apt-get -y install nginx
-echo 'Hello World!' > /hello_world.txt
-sed -i 's|root.*|root /|' -e 's|index.*|index hello_world.txt|' /etc/nginx/sites-available/default
+echo 'Hello World!' > /var/www/html/index.nginx-debian.html
 service nginx restart
