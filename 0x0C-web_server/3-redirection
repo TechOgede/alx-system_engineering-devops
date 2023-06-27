@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 #Permanently redirects the page at /redirect_me to another page
 
+apt-get -y  update
+apt-get -y install nginx
 mkdir /redirect_me
+echo 'Hello World!' > /var/www/html/index.nginx-debian.html
 sed -i '/server_name.*/c\' -e 'server_name _;\' -e 'rewrite ^/redirect_me$ / permanent;\' /etc/nginx/sites-available/default
+service nginx restart
