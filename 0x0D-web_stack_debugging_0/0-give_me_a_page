@@ -1,0 +1,5 @@
+docker exec -ti holbertonschool/265-0 /bin/bash
+sudo apt-get -y update
+sudo apt-get install apache2
+echo 'Hello Holberton' > /var/www/html/index.html
+sudo service apache2 start
