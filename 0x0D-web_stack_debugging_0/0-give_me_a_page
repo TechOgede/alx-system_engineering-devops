@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+#Install and configure Apache to respond to GET request with a string 'Hello Holberton'
 docker exec -ti holbertonschool/265-0 /bin/bash
 sudo apt-get -y update
 sudo apt-get -y install apache2
