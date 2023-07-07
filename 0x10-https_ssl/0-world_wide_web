@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #Displays info about my domain and subdomains
 
-subdomains=("www" "lib-01" "web-01" "web-02")
+subdomains=("www" "lb-01" "web-01" "web-02")
 
 info () {
     dig $1 +noall +answer | awk -v prefix="$2" '{ print "This subdomain", prefix, "is a", $4, "record and points to", $5 }'
