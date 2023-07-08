@@ -8,8 +8,6 @@ info () {
     return 0
 }
 
-i=0
-
 if [ $# -eq 1 ];
 then
     for subdomain in "${subdomains[@]}";
@@ -19,4 +17,3 @@ then
 else
     info "$2.$1" "$2"
 fi
-
