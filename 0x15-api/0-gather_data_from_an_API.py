@@ -25,7 +25,7 @@ def main():
     for task in tasks:
         if task.get('completed'):
             compl_tasks += 1
-            str_ += f'\t{task.get("title")}\n'
+            str_ += f'\t {task.get("title")}\n'
     str_ = str_.rstrip()
 
     print('Employee {} is done with tasks({}/{}):'
