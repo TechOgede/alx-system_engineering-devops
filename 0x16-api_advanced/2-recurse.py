@@ -19,7 +19,7 @@ def recurse(subreddit, hot_list=[], after=None):
     res = requests.get(url, headers=headers, allow_redirects=False)
     data = res.json()
 
-    if 'error' in data or not data.get('data').get('children'):
+    if res.status_code != 200 or not data.get('data').get('children'):
         return None
 
     for post in data.get('data').get('children'):
