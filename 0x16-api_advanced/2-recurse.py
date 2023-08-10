@@ -9,10 +9,11 @@ def recurse(subreddit, hot_list=[], after=None):
     ''' Return list of titles of all hot articles oon a subreddit '''
     import requests
 
-    url = f'https://reddit.com/r/{subreddit}/hot.json'
+    REDDIT = 'https://www.reddit.com'
+    url = f'{REDDIT}/r/{subreddit}/.json?sort=hot'
 
     if after:
-        url = f'https://reddit.com/r/{subreddit}/hot.json?after={after}'
+        url = f'{REDDIT}/r/{subreddit}/.json?sort=hot&after={after}'
 
     headers = {"User-Agent": "Alx/1.0"}
     res = requests.get(url, headers=headers, allow_redirects=False)
