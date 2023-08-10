@@ -17,10 +17,11 @@ def count_words(subbreddit, word_list, counts={}, after=None):
 
     headers = {"User-Agent": "Alx/1.0"}
     res = requests.get(url, headers=headers, allow_redirects=False)
-    data = res.json()
 
-    if 'error' in data or not data.get('data').get('children'):
+    if res.status_code != 200:
         return
+
+    data = res.json()
 
     for post in data.get('data').get('children'):
         title = post.get('data').get('title').lower().split()
@@ -28,9 +29,9 @@ def count_words(subbreddit, word_list, counts={}, after=None):
             word = word.lower()
             if word in title:
                 if counts.get(word):
-                    counts[f'{word}'] += 1
+                    counts[word] += 1
                 else:
-                    counts[f'{word}'] = 1
+                    counts[word] = 1
 
     next_page_marker = data.get('data').get('after')
 
