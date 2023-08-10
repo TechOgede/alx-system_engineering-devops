@@ -15,7 +15,7 @@ def recurse(subbreddit, hot_list=[], after=None):
         url = f'https://reddit.com/r/{subbreddit}/hot.json?after={after}'
 
     headers = {"User-Agent": "Alx/1.0"}
-    res = requests.get(url, headers=headers)
+    res = requests.get(url, allow_redirects=False, headers=headers)
     data = res.json()
 
     if 'error' in data or not data.get('data').get('children'):
