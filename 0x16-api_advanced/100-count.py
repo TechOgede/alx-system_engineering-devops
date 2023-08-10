@@ -34,7 +34,7 @@ def count_words(subbreddit, word_list, counts={}, after=None):
     next_page_marker = data.get('data').get('after')
 
     if not next_page_marker:
-        counts = sorted(counts.items(), key=lambda x: (-x[1], x[0]))
+        counts = dict(sorted(counts.items(), key=lambda x: (-x[1], x[0])))
         for key, value in counts.items():
             print(f'{key}: {value}')
         return
