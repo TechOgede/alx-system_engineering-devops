@@ -17,11 +17,12 @@ def recurse(subreddit, hot_list=[], after=None):
 
     headers = {"User-Agent": "Alx/1.0"}
     res = requests.get(url, headers=headers, allow_redirects=False)
-    data = res.json()
 
-    if res.status_code != 200 or not data.get('data').get('children'):
+    if res.status_code != 200:
         return None
-
+        
+    data = res.json()
+    
     for post in data.get('data').get('children'):
         hot_list.append(post.get('data').get('title'))
 
