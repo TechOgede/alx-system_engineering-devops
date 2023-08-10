@@ -9,13 +9,14 @@ def count_words(subbreddit, word_list, counts={}, after=None):
     ''' Return list of titles of all hot articles oon a subreddit '''
     import requests
 
-    url = f'https://reddit.com/r/{subbreddit}/hot.json'
+    REDDIT = 'https://www.reddit.com'
+    url = f'{REDDIT}/r/{subbreddit}/hot.json'
 
     if after:
-        url = f'https://reddit.com/r/{subbreddit}/hot.json?after={after}'
+        url = url + f'?after={after}'
 
     headers = {"User-Agent": "Alx/1.0"}
-    res = requests.get(url, headers=headers)
+    res = requests.get(url, headers=headers, allow_redirects=False)
     data = res.json()
 
     if 'error' in data or not data.get('data').get('children'):
@@ -26,10 +27,10 @@ def count_words(subbreddit, word_list, counts={}, after=None):
         for word in word_list:
             word = word.lower()
             if word in title:
-                if counts.get(word) or counts.get(word) == 0:
+                if counts.get(word):
                     counts[f'{word}'] += 1
                 else:
-                    counts[f'{word}'] = 0
+                    counts[f'{word}'] = 1
 
     next_page_marker = data.get('data').get('after')
 
