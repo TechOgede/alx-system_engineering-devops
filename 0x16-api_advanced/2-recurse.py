@@ -5,17 +5,17 @@ for the hot posts listed for a given subreddit
 '''
 
 
-def recurse(subbreddit, hot_list=[], after=None):
+def recurse(subreddit, hot_list=[], after=None):
     ''' Return list of titles of all hot articles oon a subreddit '''
     import requests
 
-    url = f'https://reddit.com/r/{subbreddit}/hot.json'
+    url = f'https://reddit.com/r/{subreddit}/hot.json'
 
     if after:
-        url = f'https://reddit.com/r/{subbreddit}/hot.json?after={after}'
+        url = f'https://reddit.com/r/{subreddit}/hot.json?after={after}'
 
     headers = {"User-Agent": "Alx/1.0"}
-    res = requests.get(url, allow_redirects=False, headers=headers)
+    res = requests.get(url, headers=headers, allow_redirects=False)
     data = res.json()
 
     if 'error' in data or not data.get('data').get('children'):
@@ -29,4 +29,4 @@ def recurse(subbreddit, hot_list=[], after=None):
     if not next_page_marker:
         return hot_list
 
-    return recurse(subbreddit, hot_list, next_page_marker)
+    return recurse(subreddit, hot_list, next_page_marker)
