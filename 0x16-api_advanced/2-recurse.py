@@ -10,10 +10,10 @@ def recurse(subreddit, hot_list=[], after=None):
     import requests
 
     REDDIT = 'https://www.reddit.com'
-    url = f'{REDDIT}/r/{subreddit}/.json?sort=hot'
+    url = f'{REDDIT}/r/{subreddit}/hot.json'
 
     if after:
-        url = f'{REDDIT}/r/{subreddit}/.json?sort=hot&after={after}'
+        url = f'{REDDIT}/r/{subreddit}/hot.json?after={after}'
 
     headers = {"User-Agent": "Alx/1.0"}
     res = requests.get(url, headers=headers, allow_redirects=False)
