@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-
 #reload gunicorn. Graceful shutdown to existing worker processes
 pgrep gunicorn | head -n 1 | xargs kill -s HUP
